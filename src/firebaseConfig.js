@@ -3,8 +3,8 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDznQdRnfncBKsPMOO-XlBJu7ouAFK-BDg',
-  authDomain: 'my-todo-app2-10ca3.firebaseapp.com',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: 'my-todo-app2-10ca3',
   storageBucket: 'my-todo-app2-10ca3.firebasestorage.app',
   messagingSenderId: '548117118688',
